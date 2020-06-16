@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "botDevelAppInAngular"
+    }
+  },
+  "defaultProject": "botDevelAppInAngular",
+  "cli": {
+    "analytics": "9bf92817-39de-4519-9c14-73b896284cd2"
+  }
 }
