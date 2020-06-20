@@ -1,4 +1,8 @@
 <div>
+  <s-abdullakh-form-communication
+    (closeForm)="closeForm()"
+    *ngIf="popupComplited"
+  ></s-abdullakh-form-communication>
   <s-abdullakh-header
     [header]="getHeader()"
     (clickOnHeader)="clickOnHeader($event)"
@@ -7,16 +11,19 @@
   <s-abdullakh-product-presentation
     [ProductPresentation]="getProductPresentation()"
     (clickOnProductPresentation)="clickOnProductPresentation($event)"
+    (openForm)="openForm()"
   ></s-abdullakh-product-presentation>
 
   <s-abdullakh-product-information
     [ProductInformation]="getProductInformation()"
     (clickOnProductInformation)="clickOnProductInformation($event)"
+    (openForm)="openForm()"
   ></s-abdullakh-product-information>
 
   <s-abdullakh-transition-create-bot
     [TransitionCreateBot]="getTransitionCreateBot()"
     (clickOnTransitionCreateBot)="clickOnTransitionCreateBot($event)"
+    (openForm)="openForm()"
   ></s-abdullakh-transition-create-bot>
 
   <div class="PerformanceandBenefitsbckgrnd"
@@ -24,6 +31,7 @@
     <s-abdullakh-performance-information
       [PerformanceInformation]="getPerformanceInformation()"
       (clickOnPerformanceInformation)="clickOnPerformanceInformation($event)"
+      (openForm)="openForm()"
     ></s-abdullakh-performance-information>
 
     <s-abdullakh-benefits-bots
@@ -34,11 +42,13 @@
   <s-abdullakh-consultation
     [Consultation]="gethConsultation()"
     (clickOnConsultation)="clickOnConsultation($event)"
+    (openForm)="openForm()"
   ></s-abdullakh-consultation>
 
   <s-abdullakh-tariffs
     [Tariffs]="gethTariffs()"
     (clickOnTariffs)="clickOnTariffs($event)"
+    (openForm)="openForm()"
   ></s-abdullakh-tariffs>
 
 </div>

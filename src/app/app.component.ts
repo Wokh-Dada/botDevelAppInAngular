@@ -10,6 +10,22 @@ export class AppComponent {
   constructor(private botStore: BotStoreService) {
   }
 
+  popupComplited
+
+  /**
+   * Вызов модального окна формы
+   */
+  public openForm() {
+    this.popupComplited = true;
+  }
+
+  /**
+   * Закрытие модального окна формы
+   */
+  public closeForm() {
+    this.popupComplited = false;
+  }
+
   /**
    * клик по элементам компонента header
    */
