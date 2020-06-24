@@ -71,38 +71,17 @@ export class AppComponent {
     return this.botStore.getTransitionCreateBot();
   }
 
-  /**
-   * клик по элементам блока PerformanceandBenefitsbckgrnd
-   */
-  public PerformanceandBenefitsbckgrnd({detail}) {
-    return console.log("PerformanceandBenefitsbckgrnd:", detail);
-  }
-
-  getPerformanceandBenefitsbckgrnd(){
-    return this.botStore.getPerformanceandBenefitsbckgrnd();
+  getPerformanceAndBenefits(){
+    return this.botStore.getPerformanceAndBenefits();
   }
 
   /**
-   * клик по элементам компонента PerformanceInformation
+   * клик по элементам компонента PerformanceAndBenefits
    */
-  public clickOnPerformanceInformation({detail}) {
+  public clickOnPerformanceAndBenefits({detail}) {
     return console.log("PerformanceInformation:", detail);
   }
 
-  getPerformanceInformation(){
-    return this.botStore.getPerformanceInformation();
-  }
-
-  /**
-   * клик по элементам компонента BenefitsBots
-   */
-  public clickOnBenefitsBots({detail}) {
-    return console.log("BenefitsBots:", detail);
-  }
-
-  getBenefitsBots(){
-    return this.botStore.getBenefitsBots();
-  }
 
   /**
    * клик по элементам компонента Consultation

@@ -26,19 +26,12 @@
     (openForm)="openForm()"
   ></s-abdullakh-transition-create-bot>
 
-  <div class="PerformanceandBenefitsbckgrnd"
-       [ngStyle]="{ 'backgroundImage': 'url(https://static.tildacdn.com/tild3838-6433-4637-a435-313133666535/bg.svg)'}">
-    <s-abdullakh-performance-information
-      [PerformanceInformation]="getPerformanceInformation()"
-      (clickOnPerformanceInformation)="clickOnPerformanceInformation($event)"
-      (openForm)="openForm()"
-    ></s-abdullakh-performance-information>
+  <s-abdullakh-performance-and-benefits
+    [PerformanceAndBenefits]="getPerformanceAndBenefits()"
+    (clickOnPerformanceAndBenefits)="clickOnPerformanceAndBenefits($event)"
+    (openForm)="openForm()"
+  ></s-abdullakh-performance-and-benefits>
 
-    <s-abdullakh-benefits-bots
-      [BenefitsBots]="getBenefitsBots()"
-      (clickOnBenefitsBots)="clickOnBenefitsBots($event)"
-    ></s-abdullakh-benefits-bots>
-  </div>
   <s-abdullakh-consultation
     [Consultation]="gethConsultation()"
     (clickOnConsultation)="clickOnConsultation($event)"
