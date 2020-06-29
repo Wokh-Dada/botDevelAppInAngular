@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +16,7 @@ export class BotStoreService {
     ]
   };
 
-  getHeader(){
+  getHeader() {
     return this.header;
   }
 
@@ -43,7 +43,7 @@ export class BotStoreService {
     ]
   };
 
-  getProductPresentation(){
+  getProductPresentation() {
     return this.ProductPresentation;
   }
 
@@ -132,7 +132,7 @@ export class BotStoreService {
     ]
   };
 
-  getProductInformation(){
+  getProductInformation() {
     return this.ProductInformation;
   }
 
@@ -162,7 +162,7 @@ export class BotStoreService {
     ]
   };
 
-  getTransitionCreateBot(){
+  getTransitionCreateBot() {
     return this.TransitionCreateBot;
   }
 
@@ -336,7 +336,7 @@ export class BotStoreService {
     ]
   }
 
-  getPerformanceAndBenefits(){
+  getPerformanceAndBenefits() {
     return this.PerformanceAndBenefits;
   }
 
@@ -358,7 +358,7 @@ export class BotStoreService {
     btnText: 'Хочу консультацию'
   };
 
-  gethConsultation(){
+  gethConsultation() {
     return this.Consultation;
   }
 
@@ -403,10 +403,11 @@ export class BotStoreService {
     ]
   };
 
-  gethTariffs(){
+  getTariffs() {
     return this.Tariffs;
   }
 
 
-  constructor() { }
+  constructor() {
+  }
 }

@@ -101,8 +101,8 @@ export class AppComponent {
     return console.log("Tariffs:", detail);
   }
 
-  gethTariffs(){
-    return this.botStore.gethTariffs();
+  getTariffs(){
+    return this.botStore.getTariffs();
   }
 
 }
