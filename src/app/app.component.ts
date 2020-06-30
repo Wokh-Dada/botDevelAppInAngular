@@ -33,6 +33,10 @@ export class AppComponent {
     return console.log("clickOnHeader:", detail);
   }
 
+  getFormCommunication(){
+    return this.botStore.getFormCommunication();
+  }
+
   getHeader(){
     return this.botStore.getHeader();
   }

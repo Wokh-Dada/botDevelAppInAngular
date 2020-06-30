@@ -4,6 +4,27 @@ import {Injectable} from '@angular/core';
   providedIn: 'root'
 })
 export class BotStoreService {
+  formCommunication = {
+    id: '1',
+    formInterviewText: [
+      {
+        nameInterview: 'Как вас зовут',
+        businessInterview: 'У вас уже есть бизнес',
+        businessSelect: [
+          {id: 1, select: 'Да', selected: true},
+          {id: 2, select: 'Планирую открыть', selected: false},
+          {id: 3, select: 'Нет', selected: false},
+        ],
+        websiteInterview: 'Ссылка на ваш сайт (если есть)',
+        numberInterview: 'Ваш номер',
+        btnText: 'Создать бота'
+      }
+    ]
+  };
+
+  getFormCommunication() {
+    return this.formCommunication;
+  }
 
   header = {
     id: 'header',

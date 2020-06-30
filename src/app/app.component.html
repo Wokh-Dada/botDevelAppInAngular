@@ -1,47 +1,41 @@
 <div>
-  <s-abdullakh-form-communication
+  <cnt-flexy-view-abdullakh-bot-form-communication-1_0_0
+    [payload]="getFormCommunication()"
     (closeForm)="closeForm()"
     *ngIf="popupComplited"
-  ></s-abdullakh-form-communication>
-  <s-abdullakh-header
-    [header]="getHeader()"
-    (clickOnHeader)="clickOnHeader($event)"
-  ></s-abdullakh-header>
+  ></cnt-flexy-view-abdullakh-bot-form-communication-1_0_0>
+  <cnt-flexy-view-bot-abdullakh-header-1_0_0
+    [categories]="getHeader()"
+  ></cnt-flexy-view-bot-abdullakh-header-1_0_0>
 
-  <s-abdullakh-product-presentation
-    [ProductPresentation]="getProductPresentation()"
-    (clickOnProductPresentation)="clickOnProductPresentation($event)"
+  <cnt-flexy-view-bot-abdullakh-product-presentation-1_0_0
+    [payload]="getProductPresentation()"
     (openForm)="openForm()"
-  ></s-abdullakh-product-presentation>
+  ></cnt-flexy-view-bot-abdullakh-product-presentation-1_0_0>
 
-  <s-abdullakh-product-information
-    [ProductInformation]="getProductInformation()"
-    (clickOnProductInformation)="clickOnProductInformation($event)"
+  <cnt-flexy-view-abdullakh-bot-product-information-1_0_0
+    [payload]="getProductInformation()"
     (openForm)="openForm()"
-  ></s-abdullakh-product-information>
+  ></cnt-flexy-view-abdullakh-bot-product-information-1_0_0>
 
-  <s-abdullakh-transition-create-bot
-    [TransitionCreateBot]="getTransitionCreateBot()"
-    (clickOnTransitionCreateBot)="clickOnTransitionCreateBot($event)"
+  <cnt-flexy-view-abdullakh-bot-transition-create-bot-1_0_0
+    [payload]="getTransitionCreateBot()"
     (openForm)="openForm()"
-  ></s-abdullakh-transition-create-bot>
+  ></cnt-flexy-view-abdullakh-bot-transition-create-bot-1_0_0>
 
-  <s-abdullakh-performance-and-benefits
-    [PerformanceAndBenefits]="getPerformanceAndBenefits()"
-    (clickOnPerformanceAndBenefits)="clickOnPerformanceAndBenefits($event)"
+  <cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_0_0
+    [payload]="getPerformanceAndBenefits()"
     (openForm)="openForm()"
-  ></s-abdullakh-performance-and-benefits>
+  ></cnt-flexy-view-abdullakh-bot-performance-and-benefits-1_0_0>
 
-  <s-abdullakh-consultation
-    [Consultation]="gethConsultation()"
-    (clickOnConsultation)="clickOnConsultation($event)"
+  <cnt-flexy-view-abdullakh-bot-consultation-1_0_0
+    [payload]="gethConsultation()"
     (openForm)="openForm()"
-  ></s-abdullakh-consultation>
+  ></cnt-flexy-view-abdullakh-bot-consultation-1_0_0>
 
-  <s-abdullakh-tariffs
-    [Tariffs]="getTariffs()"
-    (clickOnTariffs)="clickOnTariffs($event)"
+  <cnt-flexy-view-abdullakh-bot-tariffs-1_0_0
+    [payload]="getTariffs()"
     (openForm)="openForm()"
-  ></s-abdullakh-tariffs>
+  ></cnt-flexy-view-abdullakh-bot-tariffs-1_0_0>
 
 </div>
