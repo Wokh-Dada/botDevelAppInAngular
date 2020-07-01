@@ -27,10 +27,12 @@ export class AppComponent {
   }
 
   /**
-   * клик по элементам компонента header
+   * временный префикс ссылки для картинок
    */
-  public clickOnHeader({detail}) {
-    return console.log("clickOnHeader:", detail);
+  public testPathToAssets = "https://cdn.ramman.net/flexy-view/abdullakh/bot/assets/";
+
+  public testPathToAssetsRet(){
+    return this.testPathToAssets;
   }
 
   getFormCommunication(){
@@ -41,35 +43,13 @@ export class AppComponent {
     return this.botStore.getHeader();
   }
 
-  /**
-   * клик по элементам компонента product-presentation
-   */
-  public clickOnProductPresentation({detail}) {
-    return console.log("clickOnProductPresentation:", detail);
-  }
-
   getProductPresentation(){
     return this.botStore.getProductPresentation();
-  }
-
-  /**
-   * клик по элементам компонента product-information
-   */
-  public clickOnProductInformation({detail}) {
-    return console.log("clickOnProductInformation:", detail);
   }
 
   getProductInformation(){
     return this.botStore.getProductInformation();
   }
-
-  /**
-   * клик по элементам компонента product-presentation
-   */
-  public clickOnTransitionCreateBot({detail}) {
-    return console.log("clickOnTransitionCreateBot:", detail);
-  }
-
 
   getTransitionCreateBot(){
     return this.botStore.getTransitionCreateBot();
@@ -79,30 +59,8 @@ export class AppComponent {
     return this.botStore.getPerformanceAndBenefits();
   }
 
-  /**
-   * клик по элементам компонента PerformanceAndBenefits
-   */
-  public clickOnPerformanceAndBenefits({detail}) {
-    return console.log("PerformanceInformation:", detail);
-  }
-
-
-  /**
-   * клик по элементам компонента Consultation
-   */
-  public clickOnConsultation({detail}) {
-    return console.log("Consultation:", detail);
-  }
-
   gethConsultation(){
     return this.botStore.gethConsultation();
-  }
-
-  /**
-   * клик по элементам компонента Tariffs
-   */
-  public clickOnTariffs({detail}) {
-    return console.log("Tariffs:", detail);
   }
 
   getTariffs(){
