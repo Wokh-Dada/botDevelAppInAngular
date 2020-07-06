@@ -437,6 +437,59 @@ export class BotStoreService {
     return this.Tariffs;
   }
 
+  footer = {
+    icons: [
+      {
+        id: 1,
+        iconHref: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/il/ios11-imessage-app-store-icon.png',
+        iconName: 'Магазин'
+      },
+      {
+        id: 2,
+        iconHref: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios12-messages-imessage-photos-app.png',
+        iconName: 'Фото'
+      },
+      {
+        id: 3,
+        iconHref: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios10-message-imessage-music-app.png',
+        iconName: 'Музыка'
+      },
+      {
+        id: 4,
+        iconHref: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios11-imessage-digital-touch-icon.png',
+        iconName: 'Digital Touch'
+      },
+      {
+        id: 5,
+        iconHref: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios10-message-imessage-images-app.png',
+        iconName: 'images'
+      },
+      {
+        id: 6,
+        iconHref: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios11-message-imessage-apple-pay-app.png',
+        iconName: 'Apple Pay'
+      },
+      {
+        id: 7,
+        iconHref: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios12-messages-imessage-memoji-icon.png',
+        iconName: 'Animoji'
+      },
+      {
+        id: 8,
+        iconHref: 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iOS/ios13-imessage-memoji-sticker-icon.png',
+        iconName: 'Memoji'
+      },
+      {
+        id: 9,
+        iconHref: 'https://i2.wp.com/nigil.ru/wp-content/uploads/2015/06/whatsapp.png?resize=512%2C512',
+        iconName: 'WhatsApp'
+      },
+    ]
+  }
+
+  getFooter() {
+    return this.footer;
+  }
 
   constructor() {
   }

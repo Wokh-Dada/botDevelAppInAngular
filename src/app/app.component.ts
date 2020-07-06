@@ -67,4 +67,8 @@ export class AppComponent {
     return this.botStore.getTariffs();
   }
 
+  getFooter(){
+    return this.botStore.getFooter();
+  }
+
 }
