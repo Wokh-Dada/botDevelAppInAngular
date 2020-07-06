@@ -29,7 +29,7 @@ export class AppComponent {
   /**
    * временный префикс ссылки для картинок
    */
-  public testPathToAssets = "https://cdn.ramman.net/flexy-view/abdullakh/bot/assets/";
+  public testPathToAssets = "https://cdn.ramman.net/flexy-view/abdullakh/bot/1.01/assets/";
 
   public testPathToAssetsRet(){
     return this.testPathToAssets;
