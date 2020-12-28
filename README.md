@@ -5,4 +5,5 @@
 - автоматическая замена ссылок на социальные сервисы через замену пердаваемых данных;
 - форма обратной связи;
 
+### StencilJS компоненты - [Перейти](https://github.com/Wokh-Dada/botdevelopmentapp)
 ### Демо версия - [Демо](https://wokh-dada.github.io/botDevelAppInAngular/)
